@@ -14,21 +14,19 @@ div#sign{
 	text-align:center;
 	line-height:100px;
 	float:left;
-	display:block;
 		}
 div#goal{
 	background:#B0B0B0;
-	width:900px;
+	width:1200px;
 	height:100px;
 	font-size:30px;
 	text-align:center;
 	line-height:100px;
-	float:left;
 		}
 div#header{
 	background:#FFFFF0;
 	width:1200px;
-	height:130px;
+	height:30px;
 		}
 div#header ul{
 	list-style-type:none;
