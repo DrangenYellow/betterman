@@ -6,24 +6,59 @@ body
 		border: 0;
 		background: #f9f9f9 url(/ui/holder.gif) top center repeat-y;
 		}
-div#header{
-//background:#99CCFF;
-	background:#FFF;
-	width:800px;
-}
 div#sign{
 	background:#99CCFF;
-	height:10%;
-	width:200px;
+	width:300px;
 	height:100px;
-	display:block; 
+	font-size:30px;
+	text-align:center;
+	line-height:100px;
 	float:left;
-}
+		}
 div#goal{
 	background:#B0B0B0;
-	//font-size:20px;
-	width:600px;
+	width:900px;
 	height:100px;
-	display:block; 
+	font-size:30px;
+	text-align:center;
+	line-height:100px;
 	float:left;
-}
+		}
+div#header{
+	background:#FFFFF0;
+	width:1200px;
+	height:130px;
+		}
+div#header ul{
+	list-style-type:none;
+	width:1200px;
+	margin:0;
+	padding:0;
+		}
+div#header li{
+	list-style:none;
+	float:left;
+	position:relative;
+	outline:#778899 solid;
+		}
+div#header a{
+	display:block;
+	width:400px;
+	height:30px;
+	overflow:hidden;
+	text-decoration: none;
+	font-size:20px;
+	text-align:center;
+		}
+div#main{
+	background:#FFF;
+	min-height:900px;
+	width:1200px;
+		}
+div#footer{
+	height:50px;
+	width:1200px;z
+	text-align:center;
+	line-height:50px;
+	background:#B0B0B0;
+		}
