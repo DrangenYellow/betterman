@@ -14,6 +14,7 @@ div#sign{
 	text-align:center;
 	line-height:100px;
 	float:left;
+	display:block;
 		}
 div#goal{
 	background:#B0B0B0;
