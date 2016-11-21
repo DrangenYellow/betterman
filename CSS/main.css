@@ -1,11 +1,8 @@
 .body	{
-		text-align: left;
-		margin-left: 100;
-		margin-right: 600;
-		padding: 20;
+		padding:0;
+		margin:0;
 		border-style:none double double double;
-		min-width: 1210px;
-		background: #f9f9f9;
+		background: #E0EEEE;
 		}
 div#sign{
 	background:#92d3df;
@@ -46,7 +43,7 @@ div#goal{
 	outline:#778899 double;
 		}
 div#header{
-	background:#FFF;
+	background:#B0E0E6;
 	width:1200px;
 	height:40px;
 	font-family: 黑体;
@@ -97,16 +94,17 @@ div#left{
 		}
 div#main{
 	float:left;
-	background:#FFF;
+	background:#87CEEB;
 	min-height:700px;
 	width:1100px;
 	font-style:italic;
 	font-family: 黑体;
 		}
 div#footer{
-	height:50px;
+	float:left;
+	height:20px;
 	width:1200px;
 	text-align:center;
-	line-height:50px;
-	background:#B0B0B0;
+	line-height:20px;
+	background:#878787;
 		}
