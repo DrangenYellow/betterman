@@ -1,22 +1,21 @@
 .body	{
 		//border-style:none double double double;
-		background: #FFF;
+		background: #EDEDED;
+		//background-image: url(back1.jpg);
 		}
-hr {
-		//style:"FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)";
-}
 div#wrap{
+		background:#FFFAF0;
 		width:960px;
 		margin:0 auto;
 		}
 div#sign{
-	background:#FFF;
+	//background:#FFF;
+	filter:Alpha(opacity=50);
 	width:300px;
 	height:100px;
 	font-size:30px;
 	text-align:center;
 	line-height:100px;
-	outline:#778899;
 	font-family: Georgia;
 	font-style:italic;
 	float:left;
@@ -39,7 +38,7 @@ div#sign a:active{
 	color:#000000;
 		}
 div#goal{
-	background:#FFF;
+	//background:#FFF;
 	width:660px;
 	height:100px;
 	font-size:30px;
@@ -49,8 +48,8 @@ div#goal{
 	float:left;
 		}
 div#header{
-	background:#FFF;
-	width:1200px;
+	//background:#FFF;
+	width:960px;
 	height:40px;
 	font-family: 黑体;
 		}
@@ -93,22 +92,25 @@ a:active{
 		}
 div#left{
 	float:left;
-	background:#FFF;
+	//background:#FFF;
 	min-height:1040px;
 	width:200px;
 	font-style:italic;
 	font-family: 黑体;
+	border-right-style:solid;
+	border-right-color:#987cb9;
 		}
-hr#left{
-	float:left;
+div#avatar{
+	text-align:center;
 }
+div#left #adai{
+	width:60px;
+		}
 div#main{
 	margin-left:250px;
-	//float:left;
-	background:#FFF;
+	margin-right:50px;
+	//background:#FFF;
 	min-height:1040px;
-	//width:1100px;
-	//font-style:italic;
 	font-family: 黑体;
 		}
 div#main p{

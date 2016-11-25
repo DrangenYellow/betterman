@@ -6,3 +6,5 @@
 网页页面居中的方法：#main {width:960px;margin:0 auto;}  (据说在IE6中不支持，通常网页设计成960px宽度)
 
 使div和li等元素不换行的方法：float:left;
+
+是图片居中的方法：text-align:center;
