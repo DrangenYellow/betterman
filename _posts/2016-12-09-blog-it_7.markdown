@@ -1,0 +1,7 @@
+---
+layout: post
+title: spring框架的使用
+date:   2016-12-09
+categories: blog
+---
+提供了大量的基础功能模块，不用重复实现，降低耦合度，减少代码量，提高开发效率。

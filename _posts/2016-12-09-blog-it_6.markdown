@@ -1,0 +1,9 @@
+---
+layout: post
+title: maven的使用
+date:   2016-12-09
+categories: blog
+---
+maven是开源的jar包管理工具，开发时可以通过配置pom.xml文件下载jar包，也可以自己上传jar包。
+
+mirror标签是镜像标签，可以用来容错，第一个mirror错误后可以从第二个来下。

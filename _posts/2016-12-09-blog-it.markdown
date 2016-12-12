@@ -1,0 +1,17 @@
+---
+layout: post
+title: 前端基础知识
+date:   2016-12-09
+categories: blog
+---
+- 各个div之间不通过设置定为，会默认从上到下排列，而且会按照设置的固定高度显示，比如设置div是height：20px，则超过20px的内容会超出div的范围而出现在下一个div内，出现重叠的现象。
+
+- 在html里加条线：`<HR width="80%" color=#987cb9 SIZE=10 /><!-- color颜色，size大小 -->`
+
+- 竖线：`<HR size=100 width="1" color="#999999">`
+
+- 网页页面居中的方法：#main {width:960px;margin:0 auto;}  (据说在IE6中不支持，通常网页设计成960px宽度)
+
+- 使div和li等元素不换行的方法：float:left;
+
+- 是图片居中的方法：text-align:center;

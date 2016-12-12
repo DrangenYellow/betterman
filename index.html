@@ -1,122 +1,19 @@
-<!DOCTYPE html>
-<html>
-  
-  <head>
-    <title>My Blog – huangyl2053 – Web Developer from Somewhere</title>    <meta charset="utf-8" />
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+---
+layout: default
+title: My Blog
+---
 
-    
-    <meta name="description" content="Web Developer from Somewhere">
-    <meta property="og:description" content="Web Developer from Somewhere" />
-    
-    <meta name="author" content="huangyl2053" />
-
-    
-    <meta property="og:title" content="My Blog" />
-    <meta property="twitter:title" content="My Blog" />
-    
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" type="text/css" href="/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="huangyl2053 - Web Developer from Somewhere" href="/feed.xml" />
-    <script src="/js/footerFixed.js" type="text/javascript"></script>
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now --></head>
-  
-  <body>
-	<div class="wrap">
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="/" class="site-avatar">
-            <img src="https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png" /></a>
-          <div class="site-info">
-            <h1 class="site-name">
-              <a href="/">huangyl2053</a></h1>
-            <p class="site-description">Web Developer from Somewhere</p></div>
-          <nav>
-            <a href="/">学习的知识</a>
-            <a href="/about">About</a></nav>
-        </header>
-      </div>
-    </div>
-    <div id="main" role="main" class="container"><div class="posts">
-  
+<div class="posts">
+  {% for post in paginator.posts%}
     <article class="post">
 
-      <h1><a href="/blog/2016/12/09/blog-it_7.html">spring框架的使用</a></h1>
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 <!--
       <div class="entry">
-        <p>提供了大量的基础功能模块，不用重复实现，降低耦合度，减少代码量，提高开发效率。</p>
-
+        {{ post.excerpt }}
       </div>
 -->
-      <a href="/blog/2016/12/09/blog-it_7.html" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
-  
-    <article class="post">
-
-      <h1><a href="/blog/2016/12/09/blog-it_6.html">maven的使用</a></h1>
-<!--
-      <div class="entry">
-        <p>maven是开源的jar包管理工具，开发时可以通过配置pom.xml文件下载jar包，也可以自己上传jar包。</p>
-
-
-      </div>
--->
-      <a href="/blog/2016/12/09/blog-it_6.html" class="read-more">Read More</a>
-    </article>
-  
-    <article class="post">
-
-      <h1><a href="/blog/2016/12/09/blog-it_5.html">版本管理</a></h1>
-<!--
-      <div class="entry">
-        <ul>
-  <li>GIT:</li>
-  <li>SVN:</li>
-</ul>
-
-      </div>
--->
-      <a href="/blog/2016/12/09/blog-it_5.html" class="read-more">Read More</a>
-    </article>
-  
-    <article class="post">
-
-      <h1><a href="/blog/2016/12/09/blog-it_4.html">数据库的使用总结</a></h1>
-<!--
-      <div class="entry">
-        <p>待总结；</p>
-
-      </div>
--->
-      <a href="/blog/2016/12/09/blog-it_4.html" class="read-more">Read More</a>
-    </article>
-  
-</div></div>
-	</div>
-    <footer id="footer" class="footer">
-      <div class="wrapper-footer">
-        <div class="container">
-          <div class="pagination">
-            <span>&laquo; Prev</span> 
-            <a href="/blog/page2">Next &raquo;</a></div> 
-
-
-
-<a href="https://github.com/huangyl2053/huangyl2053.github.io"><i class="svg-icon github"></i></a>
-
-
-
-
-<a href="https://www.twitter.com/huangyl2053"><i class="svg-icon twitter"></i></a>
-
-
-</div></div>
-    </footer>
-</body>
-
-</html>
+  {% endfor %}
+</div>
