@@ -43,6 +43,7 @@
             <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>{% else %}
             <span>Next &raquo;</span>{% endif %}</div>{% endif %} {% include svg-icons.html %}</div></div>
     </footer>{% include analytics.html %}
+	<script>
 	$(function() {
       $.ajax({
           url: "/search.xml",
@@ -67,6 +68,7 @@
           }
       });
   });
+	</script>
 	
 	</body>
 
