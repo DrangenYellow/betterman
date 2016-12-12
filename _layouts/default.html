@@ -42,8 +42,8 @@
             <span>&laquo; Prev</span>{% endif %} {% if paginator.next_page %}
             <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>{% else %}
             <span>Next &raquo;</span>{% endif %}</div>{% endif %} {% include svg-icons.html %}</div></div>
-    </footer>{% include analytics.html %}</body>
-$(function() {
+    </footer>{% include analytics.html %}
+	$(function() {
       $.ajax({
           url: "/search.xml",
           dataType: "xml",
@@ -67,4 +67,7 @@ $(function() {
           }
       });
   });
+	
+	</body>
+
 </html>
