@@ -28,7 +28,6 @@
           <nav>
             <a href="{{ site.baseurl }}/">学习的知识</a>
             <a href="{{ site.baseurl }}/about">About</a></nav>
-		<input type="text"  id="search" size="30" placeholder="Search" required /> 
         </header>
       </div>
     </div>
@@ -42,34 +41,7 @@
             <span>&laquo; Prev</span>{% endif %} {% if paginator.next_page %}
             <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>{% else %}
             <span>Next &raquo;</span>{% endif %}</div>{% endif %} {% include svg-icons.html %}</div></div>
-    </footer>{% include analytics.html %}
-	<script>
-	$(function() {
-      $.ajax({
-          url: "/search.xml",
-          dataType: "xml",
-          success: function( xmlResponse ) {
-             var data = $( "article", xmlResponse ).map(function() {
-                  return {
-                      value: $( "title", this ).text() + ", " +
-                          ( $.trim( $( "date", this ).text() ) ),
-                      desc: $("description", this).text(),
-                      url: $("url", this).text()
-                  };
-              }).get();
-
-              $( "#j_search" ).autocomplete({
-                  source: data,
-                  minLength: 0,
-                  select: function( event, ui ) {
-                    window.location.href = ui.item.url;
-                  }
-              });
-          }
-      });
-  });
-	</script>
-	
+    </footer>{% include analytics.html %}	
 	</body>
 
 </html>
