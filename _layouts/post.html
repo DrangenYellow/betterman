@@ -17,10 +17,10 @@ layout: default
 </br>
 <div style="float:center">  
 {% if page.next %}
-  <a href="{{ page.next.url}}">&nbsp;&nbsp;&nbsp;上一篇：{{page.next.title | truncatewords:5}}
+  <a href="{{ page.next.url}}">上一篇：{{page.next.title | truncatewords:5}}
 {% endif %}
 {% if page.previous %}
-  <a href="{{ page.previous.url}}">下一篇：{{page.previous.title | truncatewords:5}}
+  <a href="{{ page.previous.url}}">&nbsp;&nbsp;&nbsp;下一篇：{{page.previous.title | truncatewords:5}}
 {% endif %}
 
 </div>

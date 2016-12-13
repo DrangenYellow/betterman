@@ -15,24 +15,34 @@
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now --></head>
   
   <body>
-	<div class="wrap">
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar">
-            <img src="{{ site.avatar }}" /></a>
-          <div class="site-info">
-            <h1 class="site-name">
-              <a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p></div>
-          <nav>
-            <a href="{{ site.baseurl }}/">学习的知识</a>
-            <a href="{{ site.baseurl }}/about">About</a></nav>
-        </header>
+    <div class="wrap">
+      <div class="wrapper-masthead">
+        <div class="container">
+          <header class="masthead clearfix">
+            <a href="{{ site.baseurl }}/" class="site-avatar">
+              <img src="{{ site.avatar }}" /></a>
+            <div class="site-info">
+              <h1 class="site-name">
+                <a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+              <p class="site-description">{{ site.description }}</p></div>
+            <nav>
+              <a href="{{ site.baseurl }}/">学习的知识</a>
+              <a href="{{ site.baseurl }}/about">About</a></nav>
+            <div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
+            opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+              <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="文章标题 日期 标签">
+              <div style="position: fixed; top: 16px; right: 16px;">
+                <img src="/search/img/cb-close.png" id="cb-close-btn" /></div>
+            </div>
+            <div>
+              <img src="/search/img/cb-search.png" id="cb-search-btn" title="双击ctrl试一下" /></div>
+            <link rel="stylesheet" href="{{ " /search/css/cb-search.css " | prepend: site.baseurl }}">
+            <script src="{{ " /search/js/bootstrap3-typeahead.min.js " | prepend: site.baseurl }}"></script>
+            <script src="{{ " /search/js/cb-search.js " | prepend: site.baseurl }}"></script>
+          </header>
+        </div>
       </div>
-    </div>
-    <div id="main" role="main" class="container">{{ content }}</div>
-	</div>
+      <div id="main" role="main" class="container">{{ content }}</div></div>
     <footer id="footer" class="footer">
       <div class="wrapper-footer">
         <div class="container">{% if paginator.total_pages > 1 %}
@@ -41,7 +51,6 @@
             <span>&laquo; Prev</span>{% endif %} {% if paginator.next_page %}
             <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>{% else %}
             <span>Next &raquo;</span>{% endif %}</div>{% endif %} {% include svg-icons.html %}</div></div>
-    </footer>{% include analytics.html %}	
-	</body>
+    </footer>{% include analytics.html %}</body>
 
 </html>
