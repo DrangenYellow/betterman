@@ -11,8 +11,56 @@
 	
     
 	{
+		"title" : "谷歌云平台 - ",
+		"url" : "/blog/2016/12/12/gcloud.html"
+	}
+	
+	,
+	
+    
+	{
 		"title" : "jekyll上传到github的方法 - ",
 		"url" : "/blog/2016/12/12/blog-the-way-of-commit.html"
+	}
+	
+	,
+	
+    
+	{
+		"title" : "版本管理 - ",
+		"url" : "/blog/2016/12/09/blog-it_version-control.html"
+	}
+	
+	,
+	
+    
+	{
+		"title" : "mybatis的使用 - ",
+		"url" : "/blog/2016/12/09/blog-it_mybatis.html"
+	}
+	
+	,
+	
+    
+	{
+		"title" : "java的使用总结 - ",
+		"url" : "/blog/2016/12/09/blog-it_java.html"
+	}
+	
+	,
+	
+    
+	{
+		"title" : "数据库的使用总结 - ",
+		"url" : "/blog/2016/12/09/blog-it_database.html"
+	}
+	
+	,
+	
+    
+	{
+		"title" : "c# .NET的面试知识点 - ",
+		"url" : "/blog/2016/12/09/blog-it_cshapr.html"
 	}
 	
 	,
@@ -35,48 +83,8 @@
 	
     
 	{
-		"title" : "版本管理 - ",
-		"url" : "/blog/2016/12/09/blog-it_5.html"
-	}
-	
-	,
-	
-    
-	{
-		"title" : "数据库的使用总结 - ",
-		"url" : "/blog/2016/12/09/blog-it_4.html"
-	}
-	
-	,
-	
-    
-	{
-		"title" : "java的使用总结 - ",
-		"url" : "/blog/2016/12/09/blog-it_3.html"
-	}
-	
-	,
-	
-    
-	{
-		"title" : "c# .NET的面试知识点 - ",
-		"url" : "/blog/2016/12/09/blog-it_2.html"
-	}
-	
-	,
-	
-    
-	{
-		"title" : "mybatis的使用 - ",
-		"url" : "/blog/2016/12/09/blog-it_1.html"
-	}
-	
-	,
-	
-    
-	{
 		"title" : "前端基础知识 - ",
-		"url" : "/blog/2016/12/09/blog-it.html"
+		"url" : "/blog/2016/12/09/blog-html.html"
 	}
 	
 	,
